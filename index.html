@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#10b981"><title>A+ • RBSE Class 8</title>
+<style>
+:root{--bg:#f6f7f9;--cd:#fff;--tx:#1f2937;--mu:#6b7280;--bd:#e5e7eb;--pr:#10b981;--pd:#059669;--no:#ef4444}
+[data-theme=dark]{--bg:#0f1115;--cd:#1a1d24;--tx:#f3f4f6;--mu:#9ca3af;--bd:#2c313c}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,Roboto,"Noto Sans Devanagari",sans-serif;padding-bottom:env(safe-area-inset-bottom)}
+header{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;background:var(--bg);border-bottom:1px solid var(--bd)}
+h1{flex:1;font-size:20px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}h3,h4{margin:4px 0 8px}
+.logo{background:var(--pr);color:#fff;border-radius:10px;padding:2px 9px;font-size:20px}.xp{font-weight:700;font-size:14px}
+.ib{background:var(--cd);color:var(--tx);width:40px;height:40px;border-radius:12px;font-size:18px;border:1px solid var(--bd)}
+main{padding:14px;max-width:640px;margin:auto}.mu,small{color:var(--mu)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:18px;padding:14px;margin-bottom:12px}
+.sj{display:flex;flex-direction:column;margin:0;border-bottom:4px solid var(--c);cursor:pointer}
+.em{font-size:32px;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 18%,transparent);margin-bottom:6px}
+.btn,.btn2,.ghost{border:0;border-radius:14px;padding:12px 16px;font-weight:700;font-size:15px;font-family:inherit;cursor:pointer}
+.btn{background:var(--pr);color:#fff;box-shadow:0 4px 0 var(--pd);width:100%;margin-bottom:8px}.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--pd)}
+.btn:disabled{opacity:.6}.btn2{background:var(--cd);color:var(--tx);border:1px solid var(--bd);box-shadow:0 3px 0 var(--bd)}
+.ghost{background:none;color:var(--mu);width:100%}.row{display:flex;gap:8px;margin-bottom:10px}.row>*{flex:1}
+.bar{height:10px;background:var(--bd);border-radius:9px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:var(--pr);border-radius:9px;transition:width .4s}
+.pgs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}
+.th{position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:var(--bd);border:1px solid var(--bd)}
+.th img{width:100%;height:100%;object-fit:cover}.th span{position:absolute;bottom:4px;right:6px;background:#000a;color:#fff;border-radius:8px;padding:0 7px;font-size:12px}
+.full{position:fixed;inset:0;display:flex;flex-direction:column;background:var(--bg)}
+#rd{z-index:50;background:#1c1c1f;color:#fff}#qz{z-index:60}
+#ov{position:fixed;inset:0;z-index:70;background:#0008;display:flex;align-items:flex-end}
+.sh{background:var(--cd);width:100%;max-width:640px;margin:auto;border-radius:24px 24px 0 0;padding:20px 16px calc(20px + env(safe-area-inset-bottom));max-height:88vh;overflow:auto}
+label{display:block;font-size:14px;font-weight:600}
+input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1.5px solid var(--bd);background:var(--bg);color:var(--tx);font:inherit;margin:4px 0 10px}
+.rh{display:flex;align-items:center;justify-content:space-between;padding:calc(8px + env(safe-area-inset-top)) 12px 8px}
+.rf{display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom))}.rf .btn{flex:2;margin:0}.rf .btn2{flex:1}
+.stage{flex:1;overflow:hidden;touch-action:none;background:#2b2b2e}
+#zm{width:100%;height:100%}.book{position:relative;width:100%;height:100%;perspective:1800px}
+.pg,.leaf{position:absolute;inset:0;width:100%;height:100%}.pg{object-fit:contain;background:#fff}
+.leaf{transform-origin:left center;transition:transform .7s cubic-bezier(.45,.05,.25,1);transform-style:preserve-3d;filter:drop-shadow(6px 0 10px #0006)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff}
+.face img{width:100%;height:100%;object-fit:contain;display:block}.bk{transform:rotateY(180deg);background:linear-gradient(90deg,#e8e0cf,#f7f1e3)}
+.opt{display:flex;gap:10px;align-items:center;width:100%;text-align:left;padding:12px;margin:8px 0;border-radius:14px;border:2px solid var(--bd);background:var(--cd);color:var(--tx);font:inherit}
+.opt b{width:28px;height:28px;border-radius:8px;background:var(--bd);display:grid;place-items:center;flex:none}
+.opt.ok{border-color:var(--pr);background:#10b98122}.opt.no{border-color:var(--no);background:#ef444422}
+.why{background:#6366f118;border-radius:12px;padding:10px;margin:8px 0}.tu{border:2px solid #6366f1}
+.fb{border-radius:12px;padding:10px;margin:8px 0}.fb.correct{background:#10b98122}.fb.partial{background:#f59e0b22}.fb.wrong{background:#ef444422}
+.ctr{text-align:center;padding:50px 10px}.big{font-size:64px}
+.sp{width:34px;height:34px;border:4px solid var(--bd);border-top-color:var(--pr);border-radius:50%;animation:s 1s linear infinite;margin:0 auto 10px}@keyframes s{to{transform:rotate(360deg)}}
+#tt{position:fixed;left:50%;bottom:calc(30px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#111;color:#fff;padding:10px 16px;border-radius:14px;z-index:99;font-size:14px;max-width:90%;opacity:0;pointer-events:none;transition:opacity .3s}#tt.on{opacity:1}
+</style></head><body>
+<header id=hd></header><main id=app></main><div id=rd hidden></div><div id=qz hidden></div><div id=ov hidden></div><div id=tt></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SUBS=[['sci','Science','🔬','#10b981'],['mat','Mathematics','📐','#6366f1'],['sst','Social Science','🌍','#f59e0b'],['eng','English','📖','#ec4899'],['hin','Hindi (हिंदी)','🪔','#ef4444'],['san','Sanskrit (संस्कृतम्)','🕉️','#8b5cf6']];
+const MODELS={gemini:'gemini-2.5-flash',openai:'gpt-4o-mini',claude:'claude-sonnet-5-5'};
+let S={ch:[],pr:{},xp:0,set:{dark:matchMedia('(prefers-color-scheme:dark)').matches,prov:'gemini',key:'',model:'',lang:'hinglish'}},V={v:'home'},Q=null,R={i:0,busy:0},z={s:1,x:0,y:0};
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6),cur=()=>S.ch.find(c=>c.id==V.ch),P=id=>(S.pr[id]??={read:{},q:0,ok:0,tot:0});
+/* ---------- IndexedDB (offline storage) ---------- */
+const DB=new Promise((ok,no)=>{const r=indexedDB.open('aplus',1);r.onupgradeneeded=()=>['kv','pg','th'].forEach(n=>r.result.createObjectStore(n));r.onsuccess=()=>ok(r.result);r.onerror=()=>no(r.error)});
+const tx=(s,m,f)=>DB.then(d=>new Promise((ok,no)=>{const t=d.transaction(s,m),q=f(t.objectStore(s));t.oncomplete=()=>ok(q&&q.result);t.onerror=()=>no(t.error)}));
+const dbGet=(s,k)=>tx(s,'readonly',o=>o.get(k)),dbSet=(s,k,v)=>tx(s,'readwrite',o=>o.put(v,k)),dbDel=(s,k)=>tx(s,'readwrite',o=>o.delete(k));
+const save=()=>dbSet('kv','S',S).catch(()=>toast('Could not save — storage may be full.'));
+let tm;const toast=m=>{const t=$('#tt');t.textContent=m;t.className='on';clearTimeout(tm);tm=setTimeout(()=>t.className='',2600)};
+const sheet=h=>{$('#ov').hidden=false;$('#ov').innerHTML=`<div class=sh>${h}</div>`},shut=()=>{$('#ov').hidden=true};
+/* ---------- Views ---------- */
+function render(){
+ document.documentElement.dataset.theme=S.set.dark?'dark':'light';
+ const sub=SUBS.find(s=>s[0]==V.sub),c=cur();let t='A+';if(V.v=='sub')t=sub[1];if(V.v=='ch')t=c.name;
+ $('#hd').innerHTML=`${V.v!='home'?'<button class=ib data-a=back>←</button>':'<b class=logo>A+</b>'}<h1>${esc(t)}</h1><span class=xp>⭐ ${S.xp}</span><button class=ib data-a=theme>${S.set.dark?'☀️':'🌙'}</button><button class=ib data-a=set>⚙️</button>`;
+ $('#app').innerHTML=V.v=='home'?home():V.v=='sub'?subV(sub):chV(c);
+ if(V.v=='ch')document.querySelectorAll('img[data-p]').forEach(i=>dbGet('th',i.dataset.p).then(v=>v&&(i.src=v)));
+}
+const home=()=>`<p class=mu>Class 8 • RBSE • Rajasthan Board</p><div class=grid>${SUBS.map(s=>{const c=S.ch.filter(x=>x.sub==s[0]);return `<div class="card sj" data-a=sub data-id=${s[0]} style="--c:${s[3]}"><div class=em>${s[2]}</div><b>${s[1]}</b><small>${c.length} chapters • ${c.reduce((n,x)=>n+x.pg.length,0)} pages</small></div>`}).join('')}</div>`;
+const subV=s=>{const l=S.ch.filter(c=>c.sub==s[0]);return `<button class=btn data-a=newch>＋ New chapter</button>${l.length?l.map(c=>{const p=P(c.id),r=c.pg.filter(i=>p.read[i]).length;return `<div class=card data-a=ch data-id=${c.id}><b>${esc(c.name)}</b><div class=bar><i style="width:${c.pg.length?r/c.pg.length*100:0}%"></i></div><small>${c.pg.length} pages • ${r} read • accuracy ${p.tot?Math.round(p.ok/p.tot*100)+'%':'–'}</small></div>`}).join(''):'<p class=mu style="text-align:center;padding:30px">No chapters yet. Create one, then add photos of your book pages.</p>'}`};
+function chV(c){const p=P(c.id),r=c.pg.filter(i=>p.read[i]).length;
+ return `<div class=card><b>${c.pg.length} pages • ${r} read</b><div class=bar><i style="width:${c.pg.length?r/c.pg.length*100:0}%"></i></div><small>Quiz accuracy: ${p.tot?Math.round(p.ok/p.tot*100)+'%':'–'} • ${p.q} quizzes done</small></div>
+<div class=row><button class=btn2 data-a=cam>📷 Camera</button><button class=btn2 data-a=gal>🖼️ Gallery (multi)</button></div>
+<input type=file id=fc accept="image/*" capture=environment hidden><input type=file id=fg accept="image/*" multiple hidden>
+${c.pg.length?`<div class=pgs>${c.pg.map((id,i)=>`<div class=th data-a=read data-i=${i}><img data-p=${id} alt=""><span>${i+1}</span></div>`).join('')}</div><div class=row><button class=btn data-a=read data-i=0>📖 Read book</button><button class=btn data-a=testch>🧠 Test Me</button></div>`:'<p class=mu style="text-align:center;padding:30px">Empty chapter. Snap or upload your book pages to start.</p>'}<button class=ghost data-a=delch>🗑️ Delete chapter</button>`}
+/* ---------- Add pages: compress + save ---------- */
+const shrink=f=>new Promise((ok,no)=>{const u=URL.createObjectURL(f),i=new Image();i.onload=()=>{const m=(w,q)=>{const r=Math.min(1,w/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=Math.round(i.width*r);c.height=Math.round(i.height*r);c.getContext('2d').drawImage(i,0,0,c.width,c.height);return c.toDataURL('image/jpeg',q)};const a=m(1600,.82),b=m(260,.7);URL.revokeObjectURL(u);ok([a,b])};i.onerror=()=>no(new Error('Could not read that image.'));i.src=u});
+async function addFiles(fs){const c=cur();let n=0;for(const f of fs){toast(`Saving page ${++n} of ${fs.length}…`);const [d,th]=await shrink(f),id=uid();await dbSet('pg',id,{d});await dbSet('th',id,th);c.pg.push(id);save()}render();toast(`Saved ${n} page(s) ✔`)}
+document.addEventListener('change',e=>{if(e.target.matches('#fc,#fg')){const f=[...e.target.files];e.target.value='';addFiles(f).catch(x=>toast(x.message))}});
+/* ---------- 3D page-flip reader + pinch zoom ---------- */
+const pic=async i=>(await dbGet('pg',cur().pg[i])).d,setSrc=(e,u)=>{e.src=u;return e.decode?e.decode().catch(()=>0):0},aZ=()=>{$('#zm').style.transform=`translate(${z.x}px,${z.y}px) scale(${z.s})`};
+async function openReader(i){R={i,busy:0};z={s:1,x:0,y:0};const r=$('#rd');r.className='full';r.hidden=false;
+ r.innerHTML=`<div class=rh><button class=ib data-a=closerd>✕</button><b id=rn></b><button class=ib data-a=delpg>🗑️</button></div><div class=stage id=stg><div id=zm><div class=book><img class=pg id=un alt=""><div class=leaf id=lf><div class=face><img id=f1 alt=""></div><div class="face bk"><img id=f2 alt=""></div></div></div></div></div><div class=rf><button class=btn2 data-a=prev>‹ Prev</button><button class=btn data-a=testpg>🧠 Test Me</button><button class=btn2 data-a=next>Next ›</button></div>`;
+ gest($('#stg'));await show()}
+async function show(){aZ();const u=await pic(R.i);await Promise.all([setSrc($('#un'),u),setSrc($('#f1'),u)]);const l=$('#lf');l.style.transition='none';l.style.transform='none';$('#rn').textContent=`${R.i+1} / ${cur().pg.length}`;P(V.ch).read[cur().pg[R.i]]=1;save()}
+async function flip(d){const c=cur(),n=R.i+d;if(R.busy||n<0||n>=c.pg.length)return;R.busy=1;z={s:1,x:0,y:0};aZ();
+ const a=await pic(R.i),b=await pic(n),l=$('#lf');
+ await Promise.all(d>0?[setSrc($('#un'),b),setSrc($('#f1'),a)]:[setSrc($('#un'),a),setSrc($('#f1'),b),setSrc($('#f2'),b)]);
+ $('#f2').style.visibility=d>0?'hidden':'visible';l.style.transition='none';l.style.transform=d>0?'none':'rotateY(-180deg)';l.offsetWidth;l.style.transition='';
+ l.style.transform=d>0?'rotateY(-180deg)':'none';
+ setTimeout(async()=>{R.i=n;await show();R.busy=0},760)}
+function gest(el){const pt=new Map();let d0=0,s0=1,st=null,lt=0;const dist=()=>{const [a,b]=[...pt.values()];return Math.hypot(a[0]-b[0],a[1]-b[1])};
+ el.onpointerdown=e=>{el.setPointerCapture(e.pointerId);pt.set(e.pointerId,[e.clientX,e.clientY]);if(pt.size==2){d0=dist();s0=z.s;st=null}else st={x:e.clientX,y:e.clientY,zx:z.x,zy:z.y}};
+ el.onpointermove=e=>{if(!pt.has(e.pointerId))return;pt.set(e.pointerId,[e.clientX,e.clientY]);if(pt.size==2){z.s=Math.min(4,Math.max(1,s0*dist()/d0));aZ()}else if(st&&z.s>1.05){z.x=st.zx+e.clientX-st.x;z.y=st.zy+e.clientY-st.y;aZ()}};
+ el.onpointerup=el.onpointercancel=e=>{if(pt.size==1&&st&&e.type=='pointerup'){const dx=e.clientX-st.x,dy=e.clientY-st.y;
+  if(z.s<1.05&&Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))flip(dx<0?1:-1);
+  else if(Math.abs(dx)<10&&Math.abs(dy)<10){const n=Date.now();if(n-lt<300){z=z.s>1.05?{s:1,x:0,y:0}:{s:2.5,x:0,y:0};aZ()}lt=n}}
+  pt.delete(e.pointerId);st=null;if(z.s<1.05){z={s:1,x:0,y:0};aZ()}}}
+/* ---------- AI hooks: Gemini / OpenAI / Claude Vision ---------- */
+async function ai(prompt,imgs=[],json){
+ const {prov:p,key:k}=S.set,m=S.set.model||MODELS[p];if(!k)throw new Error('Add your API key first: tap ⚙️ Settings.');
+ const im=imgs.map(u=>({t:u.slice(5,u.indexOf(';')),b:u.split(',')[1]}));let url,h={'Content-Type':'application/json'},body,pick;
+ if(p=='gemini'){url=`https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`;h['x-goog-api-key']=k;
+  body={contents:[{parts:[...im.map(x=>({inline_data:{mime_type:x.t,data:x.b}})),{text:prompt}]}],generationConfig:json?{responseMimeType:'application/json'}:{}};pick=j=>j.candidates[0].content.parts.map(x=>x.text||'').join('')}
+ else if(p=='openai'){url='https://api.openai.com/v1/chat/completions';h.Authorization='Bearer '+k;
+  body={model:m,messages:[{role:'user',content:[...im.map(x=>({type:'image_url',image_url:{url:`data:${x.t};base64,${x.b}`}})),{type:'text',text:prompt}]}],...(json?{response_format:{type:'json_object'}}:{})};pick=j=>j.choices[0].message.content}
+ else{url='https://api.anthropic.com/v1/messages';h['x-api-key']=k;h['anthropic-version']='2023-06-01';h['anthropic-dangerous-direct-browser-access']='true';
+  body={model:m,max_tokens:3000,messages:[{role:'user',content:[...im.map(x=>({type:'image',source:{type:'base64',media_type:x.t,data:x.b}})),{type:'text',text:prompt}]}]};pick=j=>j.content.map(x=>x.text||'').join('')}
+ let r;try{r=await fetch(url,{method:'POST',headers:h,body:JSON.stringify(body)})}catch{throw new Error('No internet. AI needs a connection — reading still works offline.')}
+ const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error?.message||'AI error '+r.status);return pick(j)}
+const parse=t=>{t=t.replace(/```json|```/g,'');const a=t.search(/[\[{]/),b=Math.max(t.lastIndexOf(']'),t.lastIndexOf('}'));return JSON.parse(t.slice(a,b+1))},aiJ=async p=>parse(await ai(p,[],true)),shuf=x=>{const c=x.o[x.a];x.o.sort(()=>Math.random()-.5);x.a=x.o.indexOf(c);return x};
+const LG=()=>({en:'simple English',hinglish:'Hinglish (Hindi written in English letters, friendly and easy)',hi:'simple Hindi (Devanagari)'})[S.set.lang];
+async function pageText(ids){let t='';for(const id of ids){const r=await dbGet('pg',id);if(!r.t){r.t=await ai(`You read a photographed page of an RBSE Class 8 ${SUBS.find(s=>s[0]==V.sub)[1]} textbook. Transcribe all the text exactly (English/Hindi/Sanskrit), write formulas in plain text, and briefly describe every diagram, table or figure with its labels. Output plain text only.`,[r.d]);await dbSet('pg',id,r)}t+=`[Page]\n${r.t}\n\n`}return t.slice(0,14000)}
+async function genQ(mode,ctx){const sj=SUBS.find(s=>s[0]==V.sub)[1],h=`Textbook content (RBSE Class 8 ${sj}):\n"""${ctx}"""\nUse ONLY this content; write questions in the same language as the content.\n`;
+ const r=await aiJ(mode=='mcq'?h+`Write 5 RBSE exam-style multiple-choice questions, 4 options each. Return ONLY JSON: {"items":[{"q":"","o":["","","",""],"a":0,"why":"one-line reason"}]} where a is the index (0-3) of the correct option.`:h+`Write 4 questions: 2 short-answer (2 marks) and 2 long-answer (5 marks). Return ONLY JSON: {"items":[{"q":"","type":"short","key":"model answer with key points"}]} where type is "short" or "long".`);
+ let it=r.items||r;if(mode=='mcq')it=it.filter(x=>x.q&&Array.isArray(x.o)&&x.o.length>1&&x.a>=0&&x.a<x.o.length).map(shuf);else it=it.filter(x=>x.q&&x.key);
+ if(!it.length)throw new Error('The AI did not return usable questions. Please try again.');return it}
+/* ---------- Quiz + AI tutor ---------- */
+async function startQ(mode,scope){shut();const c=cur(),ids=scope=='page'?[c.pg[R.i]]:c.pg.slice(0,6);Q={mode,scope,ch:c.id,i:0,ok:0,items:[],ctx:'',st:'load',msg:'Reading your page…'};drawQ();
+ try{Q.ctx=await pageText(ids);Q.msg='Writing questions…';drawQ();Q.items=await genQ(mode,Q.ctx);Q.st='ask'}catch(e){Q.st='err';Q.err=e.message}drawQ()}
+const rec=(v,xp)=>{Q.ok+=v;const p=P(Q.ch);p.tot++;p.ok+=v;S.xp+=Math.round(xp*v);save()};
+async function tutor(wrong,again){const it=Q.items[Q.i],tok=Q.i;Q.tu={load:1};drawQ();
+ const ans=Q.mode=='mcq'?`Correct answer: ${it.o[it.a]}\nStudent chose: ${wrong||'did not know'}`:`Model answer: ${it.key}\nStudent wrote: ${wrong||'did not know'}`;
+ const p=`You are a warm, friendly personal tutor for a Class 8 RBSE student. Textbook content:\n"""${Q.ctx}"""\nQuestion: ${it.q}\n${ans}\n${again?'The student still did not understand — use a different, simpler real-life analogy.\n':''}Explain the exact concept from this page in ${LG()}. Begin with one encouraging line, then 3-5 tiny numbered steps. Then ask ONE quick check question with 3 options on the same concept. Return ONLY JSON: {"intro":"","steps":["",""],"check":{"q":"","o":["","",""],"a":0,"why":""}}`;
+ let t;try{t=await aiJ(p);if(!t.steps||!t.check||!Array.isArray(t.check.o))throw new Error('Tutor reply was incomplete. Tap Explain again.');shuf(t.check)}catch(e){t={err:e.message}}
+ if(!Q||Q.i!=tok)return;Q.tu=t;drawQ()}
+const tutorHtml=()=>{const t=Q.tu;if(!t)return'';if(t.load)return`<div class="card tu ctr" style="padding:20px"><div class=sp></div>Your tutor is preparing a simple explanation…</div>`;if(t.err)return`<div class="card tu">⚠️ ${esc(t.err)}</div>`;const c=t.check,s=Q.tsel;
+ return `<div class="card tu"><h4>🧑‍🏫 Let's learn it together</h4><p>${esc(t.intro)}</p><ol>${t.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><h4>Quick check ✍️</h4><p>${esc(c.q)}</p>${c.o.map((o,k)=>`<button class="opt ${s==null?'':k==c.a?'ok':k==s?'no':''}" data-a=tck data-k=${k} ${s!=null?'disabled':''}><b>${'ABCD'[k]}</b>${esc(o)}</button>`).join('')}${s!=null?`<p class=why>${s==c.a?'🎉 Great, you got it! ':'No worries, read the steps once more. '}${esc(c.why||'')}</p>${s!=c.a?'<button class=btn2 style="width:100%" data-a=retu>🔁 Explain differently</button>':''}`:''}</div>`};
+function drawQ(){const q=$('#qz');q.className='full';q.hidden=false;const it=Q.items[Q.i],m=Q.mode=='mcq';let b='';
+ if(Q.st=='load')b=`<div class=ctr><div class=sp></div><p>${esc(Q.msg)}</p></div>`;
+ else if(Q.st=='err')b=`<div class=ctr><p>😕 ${esc(Q.err)}</p><button class=btn data-a=set>Open Settings</button><button class=btn2 data-a=again>Try again</button></div>`;
+ else if(Q.st=='done')b=`<div class=ctr><div class=big>${Q.ok>=Q.items.length*.7?'🏆':'💪'}</div><h2>${Q.ok}/${Q.items.length} correct</h2><p class=mu>Every mistake is a lesson. Practice again to improve.</p><button class=btn data-a=again>Practice again</button><button class=btn2 data-a=closeq>Back to book</button></div>`;
+ else{b=`<div class=bar><i style="width:${Q.i/Q.items.length*100}%"></i></div><div class=card><small>Question ${Q.i+1} of ${Q.items.length}${it.type?(it.type=='long'?' • Long answer':' • Short answer'):''}</small><h3>${esc(it.q)}</h3>`;
+  if(m)b+=it.o.map((o,k)=>`<button class="opt ${Q.sel==null?'':k==it.a?'ok':k==Q.sel?'no':''}" data-a=opt data-k=${k} ${Q.sel!=null?'disabled':''}><b>${'ABCD'[k]}</b>${esc(o)}</button>`).join('')+(Q.sel!=null?`<p class=why>💡 ${esc(it.why||'')}</p>`:'');
+  else b+=Q.ev?`<div class="fb ${Q.ev.verdict}"><b>${{correct:'✅ Correct',partial:'🟡 Partly right',wrong:'❌ Not quite'}[Q.ev.verdict]||'🟡 Partly right'}</b><p>${esc(Q.ev.feedback)}</p><details><summary>Model answer</summary>${esc(it.key)}</details></div>`:`<textarea id=ans rows=6 placeholder="Type your answer… (अपना उत्तर लिखें)"></textarea><button class=btn data-a=submit>Check my answer</button>`;
+  b+='</div>';if(!Q.fin)b+=`<button class=ghost data-a=idk>🤔 I don't know / Mujhe nahi aata</button>`;b+=tutorHtml();
+  const tu=Q.tu;if(Q.fin&&(!tu||tu.err||Q.tsel!=null))b+=`<button class=btn data-a=nx>${Q.i+1>=Q.items.length?'See result':'Next question'}</button>`;
+  else if(Q.fin&&tu&&!tu.load)b+=`<button class=ghost data-a=nx>Skip for now</button>`}
+ q.innerHTML=`<div class=rh><button class=ib data-a=closeq>✕</button><b>Practice • ${m?'MCQ':'Q&A'}</b><i style="width:40px"></i></div><div style="flex:1;overflow:auto;padding:14px;max-width:640px;width:100%;margin:auto">${b}</div>`;
+ if(Q.tu&&!Q.tu.load)q.querySelector('.tu')?.scrollIntoView({behavior:'smooth'})}
+/* ---------- Actions ---------- */
+const A={
+ back(){V=V.v=='ch'?{v:'sub',sub:V.sub}:{v:'home'};render()},theme(){S.set.dark=!S.set.dark;save();render()},
+ set(){sheet(`<h3>⚙️ Settings</h3><label>AI provider<select id=cp onchange="$('#cm').value='';$('#cm').placeholder=MODELS[this.value]"><option value=gemini>Google Gemini</option><option value=openai>OpenAI</option><option value=claude>Anthropic Claude</option></select></label><label>API key<input id=ck type=password placeholder="Paste key (stays on this phone)" value="${esc(S.set.key)}"></label><label>Model (optional)<input id=cm placeholder="${MODELS[S.set.prov]}" value="${esc(S.set.model)}"></label><label>Tutor explains in<select id=cl><option value=hinglish>Hinglish</option><option value=en>English</option><option value=hi>हिंदी</option></select></label><button class=btn data-a=savecfg>Save settings</button>`);$('#cp').value=S.set.prov;$('#cl').value=S.set.lang},
+ savecfg(){S.set={...S.set,prov:$('#cp').value,key:$('#ck').value.trim(),model:$('#cm').value.trim(),lang:$('#cl').value};save();shut();toast('Settings saved ✔')},
+ sub(b){V={v:'sub',sub:b.dataset.id};render()},ch(b){V={v:'ch',sub:V.sub,ch:b.dataset.id};render()},
+ newch(){sheet(`<h3>New chapter</h3><input id=cn maxlength=60 placeholder="e.g. Ch 1 – Crop Production"><button class=btn data-a=addch>Create chapter</button>`);setTimeout(()=>$('#cn').focus(),60)},
+ addch(){const n=$('#cn').value.trim();if(!n)return toast('Type a chapter name.');S.ch.push({id:uid(),sub:V.sub,name:n,pg:[]});save();shut();render()},
+ async delch(){const c=cur();if(!confirm(`Delete "${c.name}" and all its pages?`))return;for(const id of c.pg){await dbDel('pg',id);await dbDel('th',id)}S.ch=S.ch.filter(x=>x!=c);delete S.pr[c.id];save();V={v:'sub',sub:V.sub};render()},
+ cam(){$('#fc').click()},gal(){$('#fg').click()},read(b){openReader(+b.dataset.i)},
+ closerd(){$('#rd').hidden=true;render()},prev(){flip(-1)},next(){flip(1)},
+ async delpg(){if(!confirm('Delete this page?'))return;const c=cur(),id=c.pg.splice(R.i,1)[0];await dbDel('pg',id);await dbDel('th',id);save();if(!c.pg.length)return A.closerd();R.i=Math.min(R.i,c.pg.length-1);show()},
+ testpg(){sheet(`<h3>🧠 Practice with AI</h3><p class=mu>Based on this page</p><button class=btn data-a=start data-m=mcq data-s=page>🔤 MCQ mode (A, B, C, D)</button><button class=btn data-a=start data-m=qa data-s=page>✍️ Q&A mode (short + long)</button>`)},
+ testch(){sheet(`<h3>🧠 Practice with AI</h3><p class=mu>Based on this chapter (first 6 pages)</p><button class=btn data-a=start data-m=mcq data-s=chapter>🔤 MCQ mode (A, B, C, D)</button><button class=btn data-a=start data-m=qa data-s=chapter>✍️ Q&A mode (short + long)</button>`)},
+ start(b){startQ(b.dataset.m,b.dataset.s)},again(){startQ(Q.mode,Q.scope)},closeq(){$('#qz').hidden=true;Q=null;render()},
+ opt(b){const it=Q.items[Q.i],k=+b.dataset.k,ok=k==it.a;Q.sel=k;Q.fin=1;rec(ok?1:0,10);drawQ();if(!ok){Q.lw=it.o[k];tutor(Q.lw)}},
+ idk(){Q.fin=1;if(Q.mode=='mcq')Q.sel=-1;else Q.ev={verdict:'wrong',feedback:"No problem! Let's learn it together."};rec(0,0);Q.lw='';tutor('')},
+ async submit(){const a=$('#ans').value.trim();if(!a)return toast("Type something, or tap “I don't know”.");const it=Q.items[Q.i],b=$('[data-a=submit]'),tok=Q.i;b.disabled=true;b.textContent='Checking…';
+  try{const ev=await aiJ(`You are a kind RBSE Class 8 teacher. Question: ${it.q}\nModel answer / key points: ${it.key}\nTextbook content: """${Q.ctx}"""\nStudent's answer: ${a}\nEvaluate fairly. Return ONLY JSON: {"verdict":"correct|partial|wrong","feedback":"2 short encouraging sentences in ${LG()}"}`);
+   if(Q.i!=tok)return;Q.ev=ev;Q.fin=1;rec(ev.verdict=='correct'?1:ev.verdict=='partial'?.5:0,15);drawQ();if(ev.verdict!='correct'){Q.lw=a;tutor(a)}}catch(e){toast(e.message);b.disabled=false;b.textContent='Check my answer'}},
+ tck(b){Q.tsel=+b.dataset.k;drawQ()},retu(){Q.tsel=null;tutor(Q.lw,1)},
+ nx(){Q.i++;Q.sel=Q.ev=Q.tu=Q.tsel=null;Q.fin=0;if(Q.i>=Q.items.length){Q.st='done';P(Q.ch).q++;save()}drawQ()}};
+document.addEventListener('click',e=>{if(e.target.id=='ov')return shut();const b=e.target.closest('[data-a]');if(b&&A[b.dataset.a])A[b.dataset.a](b)});
+(async()=>{try{const s=await dbGet('kv','S');if(s)S={...S,...s,set:{...S.set,...s.set}}}catch(e){}navigator.storage?.persist?.();render()})();
+</script></body></html>
