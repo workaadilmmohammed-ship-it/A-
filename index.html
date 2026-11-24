@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#10b981"><title>A+ • RBSE Class 8</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#10b981"><link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><title>A+ • RBSE Class 8</title>
 <style>
 :root{--bg:#f6f7f9;--cd:#fff;--tx:#1f2937;--mu:#6b7280;--bd:#e5e7eb;--pr:#10b981;--pd:#059669;--no:#ef4444}
 [data-theme=dark]{--bg:#0f1115;--cd:#1a1d24;--tx:#f3f4f6;--mu:#9ca3af;--bd:#2c313c}
@@ -162,4 +162,5 @@ const A={
  nx(){Q.i++;Q.sel=Q.ev=Q.tu=Q.tsel=null;Q.fin=0;if(Q.i>=Q.items.length){Q.st='done';P(Q.ch).q++;save()}drawQ()}};
 document.addEventListener('click',e=>{if(e.target.id=='ov')return shut();const b=e.target.closest('[data-a]');if(b&&A[b.dataset.a])A[b.dataset.a](b)});
 (async()=>{try{const s=await dbGet('kv','S');if(s)S={...S,...s,set:{...S.set,...s.set}}}catch(e){}navigator.storage?.persist?.();render()})();
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
 </script></body></html>
